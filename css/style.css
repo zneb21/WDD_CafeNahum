@@ -80,3 +80,24 @@ h1, h2, h3 {
 }
 
 
+.content-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.footer {
+    text-align: center;
+    color: #89330A;
+}
+
+.footer-design img {
+    width: fit-content;
+    height: auto;
+}
+
+.coffee-cup img {
+    width: auto;
+    height: 850px;
+}
