@@ -68,6 +68,11 @@ a {
     font-size: 1.7rem;
 }
 
+.nav-icon a:hover {
+    background: #89330A;
+    color: #F8EBD3;
+    border-radius: 999px;
+}
 
 
 h1, h2, h3 {
