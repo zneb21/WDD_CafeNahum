@@ -29,8 +29,6 @@ a {
     background: #E4C58A;
     padding: 10px 22px;
     border-radius: 999px;
-    position: absolute;
-    left: 700px;
 }
 
 .main-nav a {
@@ -59,8 +57,9 @@ a {
 
 .nav-icon {
     display: flex;
-    gap: 14px;
     align-items: center;
+    justify-content: flex-end;
+    width: 210px;
 }
 
 .nav-icon a {
@@ -99,5 +98,5 @@ h1, h2, h3 {
 
 .coffee-cup img {
     width: auto;
-    height: 850px;
+    height: 800px;
 }
