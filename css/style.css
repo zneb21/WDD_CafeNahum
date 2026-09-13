@@ -96,6 +96,28 @@ h1, h2, h3 {
     z-index: 1;
 }
 
+.hero-botanical {
+    position: absolute;
+    top: 180px;
+    width: clamp(220px, 30vw, 430px);
+    height: auto;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-botanical-left {
+    top: 250px;
+    left: -55px;
+    transform: rotate(-12deg);
+}
+
+.hero-botanical-right {
+    right: -55px;
+    transform: rotate(12deg);
+}
+
 /* Left and Right Content Styles */
 .hero-left {
     position: absolute;
@@ -173,6 +195,22 @@ h1, h2, h3 {
 .coffee-cup img {
     width: auto;
     height: 1100px;
+}
+
+@media (max-width: 900px) {
+    .hero-botanical {
+        top: 240px;
+        width: clamp(180px, 30vw, 280px);
+        opacity: 0.2;
+    }
+
+    .hero-botanical-left {
+        left: -80px;
+    }
+
+    .hero-botanical-right {
+        right: -80px;
+    }
 }
 
 /* Footer Styles */
