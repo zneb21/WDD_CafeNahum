@@ -16,6 +16,7 @@ a {
     justify-content: space-between;
     position: relative;
     padding: 25px 45px;
+    z-index: 10;
 }
 
 .logo img {
@@ -71,6 +72,95 @@ a {
     background: #89330A;
     color: #F8EBD3;
     border-radius: 999px;
+}
+
+.site-sidebar {
+    position: relative;
+}
+
+.site-sidebar summary {
+    color: #D0680F;
+    cursor: pointer;
+    font-size: 1.9rem;
+    list-style: none;
+}
+
+.site-sidebar summary::-webkit-details-marker {
+    display: none;
+}
+
+.site-sidebar[open] summary {
+    color: #89330A;
+    position: fixed;
+    right: 25px;
+    top: 28px;
+    z-index: 30;
+}
+
+.sidebar-menu {
+    background: #F8EBD3;
+    box-shadow: -8px 0 24px rgba(69, 31, 10, 0.16);
+    box-sizing: border-box;
+    height: 100vh;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 28px 24px;
+    position: fixed;
+    top: 0;
+    width: 270px;
+    z-index: 20;
+}
+
+.sidebar-logo {
+    margin: 0 0 28px;
+    padding: 0 !important;
+}
+
+.sidebar-logo img {
+    display: block;
+    width: 150px;
+}
+
+.sidebar-menu a {
+    color: #241b12;
+    display: block;
+    font-family: 'Cubano', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding: 5px 0;
+}
+
+.sidebar-menu a:hover {
+    background: transparent;
+    border-radius: 0;
+    color: #89330A;
+}
+
+.sidebar-bottom {
+    border-top: 1px solid rgba(137, 51, 10, 0.2);
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+.sidebar-bottom p {
+    color: #89330A;
+    font-size: 0.68rem;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+.sidebar-social {
+    display: flex;
+    gap: 12px;
+    margin: 8px 0 12px;
+}
+
+.sidebar-menu .sidebar-social a {
+    color: #89330A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    padding: 0;
 }
 
 /* Hero Section Styles */
