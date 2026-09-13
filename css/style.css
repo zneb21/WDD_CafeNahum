@@ -182,7 +182,7 @@ a {
 
 .gallery-kicker {
     color: #a84b16;
-    font-size: 0.78rem;
+    font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 0.15em;
     margin: 0 0 4px 10px;
@@ -201,7 +201,7 @@ a {
 .gallery-note {
     color: #a84b16;
     font-family: 'Cubano', sans-serif;
-    font-size: clamp(1.1rem, 2vw, 1.65rem);
+    font-size: clamp(1.25rem, 2.2vw, 1.85rem);
     line-height: 1.15;
     margin: 0;
     position: absolute;
@@ -290,10 +290,10 @@ a {
     box-sizing: border-box;
     color: #68401c;
     font-family: 'Cubano', sans-serif;
-    font-size: 0.7rem;
-    line-height: 1.1;
+    font-size: 0.95rem;
+    line-height: 1.2;
     margin: 8px 6px 0;
-    padding: 8px 12px;
+    padding: 10px 14px;
     position: static;
     width: auto;
     transform: rotate(-2deg);
@@ -315,6 +315,7 @@ a {
 .gallery-card:nth-child(6) { transform: rotate(1.5deg); }
 .gallery-card:nth-child(7) { transform: rotate(-1deg); }
 .gallery-card:nth-child(8) { transform: rotate(1.2deg); }
+.gallery-card:nth-child(9) { transform: rotate(-1.2deg); }
 
 @media (max-width: 900px) {
     .gallery-heading h1 {
@@ -343,7 +344,7 @@ a {
     }
 
     .gallery-kicker {
-        font-size: 0.65rem;
+        font-size: 0.78rem;
     }
 
     .gallery-heading h1 {
@@ -360,6 +361,10 @@ a {
         position: static;
     }
 
+    .gallery-card figcaption {
+        font-size: 0.9rem;
+    }
+
     .gallery-brush {
         position: static;
         margin-bottom: 34px;
@@ -368,6 +373,7 @@ a {
 
     .gallery-grid {
         column-count: 1;
+    }
 }
 
 /* Hero Section Styles */
