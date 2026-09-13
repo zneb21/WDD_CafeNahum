@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Nahum</title>
+    <title>Contact Cafe Nahum</title>
 
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -43,6 +43,116 @@
             </div>
 
    </header>
+
+   <main class="contact-page">
+        <section class="contact-heading">
+            <div>
+                <h1>CONTACT</h1>
+                <p>We'd love<br>to hear from you!</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-cup">
+                <img src="images/coffeecup.png" alt="Cafe Nahum coffee cup">
+            </div>
+
+            <div class="contact-details">
+                <h2>GET IN TOUCH</h2>
+                <p><i class="bi bi-geo-alt-fill"></i>123 Coffee Lane,<br>Barely, Manila 1000<br>(Address placeholder)</p>
+                <p><i class="bi bi-telephone-fill"></i>+63 912 345 6789<br>(Phone placeholder)</p>
+                <p><i class="bi bi-envelope-fill"></i>hello@cafenahum.ph<br>(Email placeholder)</p>
+
+                <h2 class="follow-title">FOLLOW US</h2>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+
+            <aside class="contact-side">
+                <section class="hours-box">
+                    <h2><i class="bi bi-clock"></i> OPENING HOURS</h2>
+                    <p><span>Mon - Fri</span><strong>7:00 AM - 9:00 PM</strong></p>
+                    <p><span>Sat - Sun</span><strong>8:00 AM - 10:00 PM</strong></p>
+                </section>
+
+                <section class="map-box" aria-label="Cafe Nahum map placeholder">
+                    <div class="map-lines"></div>
+                    <i class="bi bi-geo-alt-fill map-pin"></i>
+                    <p>Find us<br>here!</p>
+                </section>
+            </aside>
+        </section>
+
+        <section class="contact-form-section" aria-labelledby="form-title">
+            <div>
+                <h2 id="form-title">SEND US A MESSAGE</h2>
+                <p>Have a question or want to say hello? Fill out the form below.</p>
+            </div>
+
+            <form class="contact-form" action="#" method="post" enctype="multipart/form-data">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="09XX XXX XXXX">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password">
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="1" max="120" placeholder="Your age">
+
+                <label for="visit-date">Preferred Date</label>
+                <input type="date" id="visit-date" name="visit-date">
+
+                <label for="visit-time">Preferred Time</label>
+                <input type="time" id="visit-time" name="visit-time">
+
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <label><input type="radio" name="source" value="friend"> Friend</label>
+                    <label><input type="radio" name="source" value="social-media"> Social media</label>
+                    <label><input type="radio" name="source" value="walk-in"> Walk-in</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What can we help with?</legend>
+                    <label><input type="checkbox" name="topic" value="reservation"> Reservation</label>
+                    <label><input type="checkbox" name="topic" value="catering"> Catering</label>
+                    <label><input type="checkbox" name="topic" value="feedback"> Feedback</label>
+                </fieldset>
+
+                <label for="inquiry-type">Inquiry Type</label>
+                <select id="inquiry-type" name="inquiry-type">
+                    <option value="general">General question</option>
+                    <option value="reservation">Reservation</option>
+                    <option value="event">Private event</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+
+                <label for="attachment">File Upload</label>
+                <input type="file" id="attachment" name="attachment">
+
+                <div class="form-buttons">
+                    <button type="submit">SEND MESSAGE</button>
+                    <button type="reset">CLEAR FORM</button>
+                </div>
+            </form>
+        </section>
+   </main>
+
+   <footer class="contact-footer">
+        <p>&copy; 2024 Cafe Nahum. All rights reserved.</p>
+   </footer>
 
 </body>
 
