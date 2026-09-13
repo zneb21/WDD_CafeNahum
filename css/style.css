@@ -577,10 +577,32 @@ h1, h2, h3 {
 
 /* Contact page */
 .contact-page {
+    overflow: hidden;
+    position: relative;
     width: 90%;
     max-width: 1180px;
     margin: 20px auto 60px;
     color: #241b12;
+}
+
+.contact-botanical {
+    opacity: 0.18;
+    pointer-events: none;
+    position: absolute;
+    width: 220px;
+    z-index: -1;
+}
+
+.contact-botanical-left {
+    left: -95px;
+    top: 250px;
+    transform: rotate(-18deg);
+}
+
+.contact-botanical-right {
+    right: -95px;
+    top: 15px;
+    transform: rotate(18deg);
 }
 
 .contact-heading {
@@ -837,15 +859,15 @@ h1, h2, h3 {
 }
 
 .contact-footer {
-    background: #89330A;
-    color: #F8EBD3;
-    padding: 20px;
+    margin-top: 0;
     text-align: center;
 }
 
 .contact-footer p {
+    color: #F8EBD3;
     font-size: 0.75rem;
     margin: 0;
+    position: absolute;
 }
 
 @media (max-width: 900px) {
@@ -870,6 +892,18 @@ h1, h2, h3 {
 @media (max-width: 620px) {
     .contact-page {
         width: 90%;
+    }
+
+    .contact-botanical {
+        width: 150px;
+    }
+
+    .contact-botanical-left {
+        left: -85px;
+    }
+
+    .contact-botanical-right {
+        right: -85px;
     }
 
     .contact-heading {
