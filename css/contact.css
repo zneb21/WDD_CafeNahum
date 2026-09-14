@@ -1,0 +1,357 @@
+/* Contact page */
+.contact-page {
+    position: relative;
+    width: 90%;
+    max-width: 1180px;
+    margin: 20px auto 60px;
+    color: #241b12;
+}
+
+.contact-botanical {
+    opacity: 0.18;
+    pointer-events: none;
+    position: absolute;
+    width: 220px;
+    z-index: -1;
+}
+
+.contact-botanical-left {
+    display: none;
+}
+
+.contact-botanical-right {
+    right: 0;
+    top: 15px;
+    transform: rotate(18deg);
+}
+
+.contact-heading {
+    min-height: 185px;
+}
+
+.contact-heading h1 {
+    color: #89330A;
+    font-family: 'Cubano', sans-serif;
+    font-size: 8rem;
+    line-height: 0.85;
+    margin: 16px 0 12px;
+}
+
+.contact-small-title {
+    color: #D0680F;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0 0 8px;
+}
+
+.contact-subtitle {
+    color: #89330A;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin: 10px 0 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 35px;
+    align-items: start;
+    margin-top: 24px;
+}
+
+.contact-details {
+    border-right: 0;
+    padding-right: 0;
+}
+
+.contact-details h2,
+.hours-box h2,
+.contact-form-section h2 {
+    color: #89330A;
+    font-family: 'Cubano', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin: 0 0 22px;
+}
+
+.contact-details p {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 18px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.contact-details p i {
+    color: #D0680F;
+    font-size: 1.25rem;
+    left: 0;
+    position: absolute;
+    top: 1px;
+}
+
+.follow-title {
+    margin-top: 30px !important;
+    margin-bottom: 12px !important;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-links a {
+    align-items: center;
+    background: #89330A;
+    border-radius: 50%;
+    color: #F8EBD3;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+
+.contact-side {
+    padding-left: 0;
+    margin-top: 35px;
+}
+
+.hours-box {
+    background: #E4C58A;
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.hours-box h2 i {
+    font-size: 1.3rem;
+    margin-right: 8px;
+}
+
+.hours-box p {
+    border-top: 1px solid rgba(137, 51, 10, 0.25);
+    display: flex;
+    font-size: 0.85rem;
+    justify-content: space-between;
+    margin: 0;
+    padding: 9px 0;
+}
+
+.hours-box strong {
+    font-weight: 500;
+}
+
+.map-box {
+    background: #E9D5A9;
+    height: 130px;
+    margin-top: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.map-lines {
+    background: repeating-linear-gradient(35deg, transparent 0 24px, rgba(255, 248, 227, 0.8) 25px 29px, transparent 30px 55px);
+    height: 100%;
+    transform: rotate(-8deg) scale(1.2);
+    width: 100%;
+}
+
+.map-pin {
+    color: #89330A;
+    font-size: 2rem;
+    left: 50%;
+    position: absolute;
+    top: 45%;
+}
+
+.map-box p {
+    color: #89330A;
+    font-family: 'Gorditas', 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 18px;
+    top: 5px;
+    transform: rotate(-6deg);
+}
+
+.contact-form-section {
+    background: #FFF8E3;
+    border: 1px solid #C99C62;
+    border-radius: 18px;
+    display: block;
+    margin-top: 0;
+    padding: 25px;
+}
+
+.contact-form-section > div p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.contact-form-section > div {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-row,
+.form-full,
+.contact-form > fieldset,
+.form-buttons {
+    grid-column: span 2;
+}
+
+.form-row {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form label,
+.contact-form legend {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.form-field label,
+.form-full label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    background: #FFF8E3;
+    border: 1px solid #C99C62;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #241b12;
+    font: inherit;
+    font-size: 0.85rem;
+    padding: 10px 12px;
+    width: 100%;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+}
+
+.contact-form fieldset {
+    border: 1px solid #C99C62;
+    display: flex;
+    gap: 18px;
+    padding: 10px;
+}
+
+.contact-form fieldset label {
+    font-weight: 400;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.form-buttons button {
+    background: #89330A;
+    border: 0;
+    border-radius: 20px;
+    color: #F8EBD3;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 11px 18px;
+}
+
+.form-buttons button[type="reset"] {
+    background: #FFF8E3;
+    border: 1px solid #89330A;
+    color: #89330A;
+}
+
+@media (max-width: 900px) {
+    .contact-content {
+        grid-template-columns: 1fr 2fr;
+        gap: 18px;
+    }
+
+    .contact-heading h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .contact-page {
+        width: 90%;
+    }
+
+    .contact-botanical {
+        width: 150px;
+    }
+
+    .contact-botanical-left {
+        left: -85px;
+    }
+
+    .contact-botanical-right {
+        right: 0;
+    }
+
+    .contact-heading {
+        min-height: 155px;
+    }
+
+    .contact-heading h1 {
+        font-size: 4rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-details {
+        padding: 0;
+    }
+
+    .contact-side {
+        padding: 0;
+    }
+
+    .contact-form-section {
+        display: block;
+    }
+
+    .contact-form-section > div {
+        margin-bottom: 25px;
+    }
+
+    .contact-form fieldset {
+        display: block;
+    }
+
+    .contact-form fieldset label {
+        display: block;
+        margin: 6px 0;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-section {
+        padding: 20px;
+    }
+}

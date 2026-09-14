@@ -1,0 +1,209 @@
+/* Gallery page */
+.gallery-page {
+    background: #f8ebd3;
+    min-height: 820px;
+    overflow: hidden;
+    padding: 0 3.2vw 72px;
+    position: relative;
+}
+
+.gallery-heading {
+    margin: 8px auto 0;
+    max-width: 1300px;
+    padding-bottom: 90px;
+    position: relative;
+    z-index: 2;
+}
+
+.gallery-kicker {
+    color: #a84b16;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin: 0 0 4px 10px;
+    text-transform: uppercase;
+}
+
+.gallery-heading h1 {
+    color: #8d300c;
+    font-size: clamp(5.3rem, 14vw, 12.8rem);
+    letter-spacing: 0.01em;
+    line-height: 0.78;
+    margin: 0;
+    max-width: 850px;
+}
+
+.gallery-note {
+    color: #a84b16;
+    font-family: 'Cubano', sans-serif;
+    font-size: clamp(1.25rem, 2.2vw, 1.85rem);
+    line-height: 1.15;
+    margin: 0;
+    position: absolute;
+    left: 62%;
+    top: 116px;
+    transform: rotate(-5deg);
+}
+
+.gallery-brush {
+    background: #a84b16;
+    display: block;
+    height: 5px;
+    margin: 0;
+    position: absolute;
+    left: 62%;
+    top: 220px;
+    transform: rotate(-7deg);
+    width: 115px;
+}
+
+.gallery-botanical {
+    mix-blend-mode: multiply;
+    opacity: 0.25;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+}
+
+.gallery-botanical-top {
+    right: -34px;
+    top: -50px;
+    transform: rotate(18deg);
+    width: 240px;
+}
+
+.gallery-botanical-bottom {
+    bottom: 15px;
+    left: -70px;
+    transform: rotate(-22deg);
+    width: 250px;
+}
+
+/* Masonry columns let each source image keep its own proportions. */
+.gallery-grid {
+    column-count: 3;
+    column-gap: 22px;
+    margin: 0 auto;
+    max-width: 1300px;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-card {
+    background: #fff8e7;
+    break-inside: avoid;
+    box-shadow: 0 5px 9px rgba(91, 47, 18, 0.2);
+    display: inline-block;
+    margin: 0 0 22px;
+    padding: 8px;
+    position: relative;
+    width: 100%;
+}
+
+.gallery-card img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.gallery-card--portrait img {
+    background: #eadab8;
+    object-fit: contain;
+}
+
+.gallery-card--natural img {
+    height: auto;
+    object-fit: contain;
+}
+
+.gallery-card figcaption {
+    background: #e8cf91;
+    box-sizing: border-box;
+    color: #68401c;
+    font-family: 'Cubano', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    margin: 8px 6px 0;
+    padding: 10px 14px;
+    position: static;
+    width: auto;
+    transform: rotate(-2deg);
+}
+
+.gallery-card-room {
+    transform: rotate(-2deg);
+}
+
+.gallery-card-room figcaption {
+    transform: rotate(-4deg);
+}
+
+.gallery-card:nth-child(2) { transform: rotate(1.5deg); }
+.gallery-card:nth-child(3) { transform: rotate(-1deg); }
+.gallery-card:nth-child(4) { transform: rotate(1deg); }
+.gallery-card:nth-child(5) { transform: rotate(-1.5deg); }
+.gallery-card:nth-child(6) { transform: rotate(1.5deg); }
+.gallery-card:nth-child(7) { transform: rotate(-1deg); }
+.gallery-card:nth-child(8) { transform: rotate(1.2deg); }
+.gallery-card:nth-child(9) { transform: rotate(-1.2deg); }
+
+@media (max-width: 900px) {
+    .gallery-heading h1 {
+        font-size: clamp(4.8rem, 15vw, 8rem);
+    }
+
+    .gallery-note,
+    .gallery-brush {
+        left: 60%;
+    }
+
+    .gallery-grid {
+        column-count: 2;
+        column-gap: 18px;
+    }
+}
+
+@media (max-width: 620px) {
+    .gallery-page {
+        min-height: 0;
+        padding: 0 20px 60px;
+    }
+
+    .gallery-heading {
+        margin-top: 26px;
+    }
+
+    .gallery-kicker {
+        font-size: 0.78rem;
+    }
+
+    .gallery-heading h1 {
+        font-size: clamp(3.8rem, 19vw, 6rem);
+    }
+
+    .gallery-note,
+    .gallery-brush {
+        left: 52%;
+    }
+
+    .gallery-note {
+        font-size: 0.95rem;
+        position: static;
+    }
+
+    .gallery-card figcaption {
+        font-size: 0.9rem;
+    }
+
+    .gallery-brush {
+        position: static;
+        margin-bottom: 34px;
+        width: 80px;
+    }
+
+    .gallery-grid {
+        column-count: 1;
+    }
+}
