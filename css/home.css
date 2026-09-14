@@ -54,6 +54,7 @@
     line-height: 1.5;
 }
 
+/* CTA Hero buttons */
 .hero-buttons {
     display: flex;
     gap: 12px;
@@ -112,11 +113,13 @@
     padding-top: 100px;
 }
 
+/* Big Coffee Cup sa Center */
 .coffee-cup img {
     width: auto;
     height: 1100px;
 }
 
+/*Coffee Bean nga background*/
 @media (max-width: 900px) {
     .hero-botanical {
         top: 190px;
