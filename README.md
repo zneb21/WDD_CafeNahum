@@ -22,6 +22,29 @@ The group used a warm coffee-inspired design with simple navigation. The colors,
 
 The website is made with HTML and CSS only. It is a static website and does not use a database.
 
+## Main Features
+
+- **Shared navigation:** Every page includes the Cafe Nahum logo, navigation links, sidebar menu, and footer.
+- **Collapsible sidebar:** The menu button uses HTML `<details>` and `<summary>` elements. Clicking the three-line icon opens the sidebar, and clicking it again closes the sidebar.
+- **Responsive layout:** CSS media queries adjust the navigation, footer, gallery, forms, and page layouts for smaller screens.
+- **Gallery:** The gallery uses a CSS column layout to display nine cafe-related images with captions.
+- **Contact form:** The form demonstrates text, email, telephone, password, number, date, time, radio, checkbox, select, textarea, file-upload, submit, and reset controls. It is for demonstration only and does not send data.
+
+## CSS Structure
+
+The styles are separated to keep the project easier to understand and edit.
+
+| CSS File | Purpose |
+|---|---|
+| `css/universal.css` | Shared body, headings, header, navigation, sidebar, footer, and shared mobile styles |
+| `css/home.css` | Home-page hero section, coffee cup, decorations, and buttons |
+| `css/about.css` | About-page text, image, mission, vision, and values |
+| `css/menu.css` | Menu layout, product sections, prices, and product images |
+| `css/gallery.css` | Gallery heading, image cards, captions, and responsive grid |
+| `css/contact.css` | Contact details, hours, map design, and inquiry form |
+
+Each HTML page loads `universal.css` first and then its own page stylesheet. This lets the shared design stay consistent while keeping page-specific code separate.
+
 ## Why the Group Chose Cafe Nahum
 
 The group chose Cafe Nahum because it is a local coffee shop in Iloilo. It has different drinks and products that can be presented well on a website.
@@ -50,17 +73,23 @@ The most difficult part was planning the page content and making the design look
 |---|---|
 | `index.html` | Home page |
 | `about.html` | About Us page |
-| `services.html` | Products / Services page |
+| `services.html` | Products / Menu page |
 | `gallery.html` | Gallery page |
 | `contact.html` | Contact Us page |
-| `css/style.css` | Website styles |
+| `css/universal.css` | Shared website styles |
+| `css/home.css` | Home page styles |
+| `css/about.css` | About page styles |
+| `css/menu.css` | Menu page styles |
+| `css/gallery.css` | Gallery page styles |
+| `css/contact.css` | Contact page styles |
 | `images/` | Website images |
 
 ## References
 
 - [Cafe Nahum Foodpanda Listing](https://www.foodpanda.ph/restaurant/ryet/cafe-nahum-commission-civil-street)
-- Cafe Nahum Facebook page
-- Cafe Nahum Instagram page
+- [Cafe Nahum Facebook page](https://www.facebook.com/cafenahumans)
+- [Cafe Nahum Instagram page](https://www.instagram.com/cafenahum_)
+- [Cafe Nahum TikTok page](https://www.tiktok.com/@cafe.nahum)
 
 The Facebook and Instagram pages can be used to check the cafe's latest posts, products, announcements, and other business information.
 
